@@ -28,6 +28,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env.production
+.env.*
 
 # vercel
 .vercel
@@ -38,4 +40,27 @@ next-env.d.ts
 
 # database
 *.sqlite
-*.sqlite-journal .env.production
+*.sqlite-journal
+*.sql
+postgres-data/
+
+# uploads
+/public/uploads/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+**/secrets.json
+**/credentials.json
+**/*.key
+**/*.pem
